@@ -23,8 +23,7 @@ jobs:
           php-version: '8.0' # Specify your PHP version
           extensions: mbstring, xml, curl, mysqli # Add any required extensions
 
-      - name: Install Composer dependencies
-        run: composer install
+
 
       - name: Run PHPUnit tests
         run: vendor/bin/phpunit
